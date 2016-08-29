@@ -1,0 +1,21 @@
+{  
+   "subnet":"192.168.1.0",
+   "netmask":"255.255.255.0",
+   "default-gw":"192.168.1.254",
+   "dns":[  
+      "8.8.8.8",
+      "8.8.4.4"
+   ],
+   "range":{  
+      "from":"192.168.1.10",
+      "to":"192.168.1.100"
+   },
+   "lease":1800,
+   "rules":[  
+      { 
+  "host":"string romlitac hostis identificirebas aketebt",
+         "mac":"f0:a2:25:24:7f:ec",
+         "fix-address":"192.168.1.4"
+      }
+   ]
+}

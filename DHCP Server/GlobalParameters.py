@@ -1,0 +1,63 @@
+"""  This class keeps global parameters, used
+    in the whole DHCP server
+"""
+
+# socket parameters
+PORT = 67
+BROADCAST_IP_ADDRESS = '0.0.0.0'
+
+# DHCP message constant values
+DHCP_EMPTY_BYTE = 0
+NUM_CHADDR_UNUSED_BYTES = 10
+NUM_BOOTP_LEGACY_BYTES = 192
+
+# message options codes
+END_OPTION_CODE = 255
+DHCP_MESSAGE_TYPE = 53
+REQUESTED_IP_CODE = 50
+PARAMETER_REQUEST_LIST_CODE = 55
+DHCP_SERVER_IDENTIFIER = 54
+
+# requested parameters list codes
+REQUEST_SUBNET_MASK = 1
+ROUTER = 3
+DOMAIN_NAME = 15
+DOMAIN_NAME_SERVER = 6
+
+# DHCP message types
+DHCP_DISCOVERY = 1
+DHCP_OFFER = 2
+DHCP_REQUEST = 3
+DHCP_ACK = 5
+DHCP_NACK = 6
+
+# message type byte index
+MESSAGE_TYPE_BYTE_INDEX = 242
+
+# Offer options types
+OFFER_SUBNET_MASK = 1
+OFFER_ROUTER = 3
+OFFER_LEASE_TIME = 51
+OFFER_DHCP_SERVER = 54
+OFFER_DNS_SERVERS = 6
+
+# ACK options types
+ACK_SUBNET_MASK = 1
+ACK_ROUTER = 3
+ACK_LEASE_TIME = 51
+ACK_DHCP_SERVER = 54
+ACK_DNS_SERVERS = 6
+
+# global parameters for config file
+CONFIG_IP_ADDRESSES_RANGE = "range"
+CONFIG_RANGE_FROM = "from"
+CONFIG_RANGE_TO = "to"
+CONFIG_GATEWAY_IP_ADDRESS = "default-gw"
+CONFIG_SUBNET_MASK = "netmask"
+CONFIG_LEASE = "lease"
+CONFIG_DNS = "dns"
+CONFIG_RULES = "rules"
+CONFIG_RULES_MAC = "mac"
+CONFIG_RULES_FIX_ADDRESS = "fix-address"
+
+MY_SERVER_IP = '192.168.0.100'
