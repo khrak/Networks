@@ -1,0 +1,18 @@
+{
+	"log": "home/logs/",
+	"server": [{
+		"vhost": "example1.com",
+		"ip": "127.0.0.1",
+		"port": 80,
+		"documentroot": "/path/to/example1/"
+	}, {
+		"vhost": "example2.com",
+		"ip": "0.0.0.0",
+		"port": 8080,
+		"balance": [
+			"backend1.freeuni.edu.ge:5000/path/to/dir1",
+			"backend2.freeuni.edu.ge:5001/path/to/dir2"
+		]
+	}]
+}
+
